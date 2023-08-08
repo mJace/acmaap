@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: caturday
-  namespace: prod
+  name: prod-caturday
+
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: caturday
+      app: prod-caturday
   template:
     metadata:
       labels:
-        app: caturday
+        app: prod-caturday
     spec:
       containers:
       - name: caturday

@@ -1,12 +1,11 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: caturday
-  namespace: example
+  name: test
 spec:
   port:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: caturday
+    name: test-caturday
     weight: 100
