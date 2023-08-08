@@ -8,6 +8,6 @@ spec:
   tower_auth_secret: aapaccess
   job_template_name: <template_name>
   extra_vars:
-    backend: http://caturday-example.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com ## or http://caturday-prod.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com 
+    backend: http://test-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com/ ## or http://prod-caturday-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com/
     
     
