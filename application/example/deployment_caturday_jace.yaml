@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: caturday
+  namespace: example
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: caturday
+  template:
+    metadata:
+      labels:
+        app: caturday
+    spec:
+      containers:
+      - name: caturday
+        image: quay.io/rhn_support_jaliang/caturday:latest
+
