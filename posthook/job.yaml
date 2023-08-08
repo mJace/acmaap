@@ -5,9 +5,13 @@ metadata:
   name: changebackend
 spec:
   tower_auth_secret: aapaccess
-  job_template_name: <template_name>
+  job_template_name: haproxy
   extra_vars:
-    backend: "http://test-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com/" 
+    backend_servers:
+      - name: server1
+        ip: "test-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com"
+        port: 80
+    # backend: "http://test-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com/" 
     ## or "http://prod-caturday-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com/"
     
     
