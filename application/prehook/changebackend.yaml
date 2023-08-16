@@ -8,8 +8,8 @@ spec:
   job_template_name: haproxy
   extra_vars:    
     backend_servers:
-      - name: prod-caturday-backend.apps.cluster-c6wqd.c6wqd.sandbox2982.opentlc.com
-        ip: prod-caturday-backend.apps.cluster-c6wqd.c6wqd.sandbox2982.opentlc.com
+      - name: test-backend.apps.cluster-c6wqd.c6wqd.sandbox2982.opentlc.com
+        ip: test-backend.apps.cluster-c6wqd.c6wqd.sandbox2982.opentlc.com
         port: 80
     
     
