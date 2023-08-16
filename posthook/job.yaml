@@ -6,12 +6,10 @@ metadata:
 spec:
   tower_auth_secret: aapaccess
   job_template_name: haproxy
-  extra_vars:
+  extra_vars:    
     backend_servers:
-      - name: server1
-        ip: "test-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com"
+      - name: http://test-backend.apps.cluster-c6wqd.c6wqd.sandbox2982.opentlc.com/
+        ip: http://test-backend.apps.cluster-c6wqd.c6wqd.sandbox2982.opentlc.com/
         port: 80
-    # backend: "http://test-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com/" 
-    ## or "http://prod-caturday-backend.apps.cluster-xbfxw.xbfxw.sandbox920.opentlc.com/"
     
     
