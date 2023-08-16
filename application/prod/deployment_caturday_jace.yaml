@@ -4,7 +4,7 @@ metadata:
   name: prod-caturday
 
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: prod-caturday
